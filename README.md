@@ -1,6 +1,6 @@
-GYRODMD is a python code for Dynamic Mode Decomposition analysis for Gyrokinetics.
+GYRODMD is a python code for Dynamic Mode Decomposition (DMD) analysis for Gyrokinetics.
 
-Please put the gyrodmd.py file in the same directory of your python code and import it using following:
+Please put the gyrodmd.py file in the same directory of your python code and import it as follow:
 ```bash
 from gyrodmd import GYRODMD
 ```
