@@ -9,7 +9,7 @@ To use it, define the GYRODMD class and fit it as follow:
 gyro_dmd = GYRODMD(rank=number)
 gyro_dmd.fit(data=your_data[:,:], dt=your_dt)
 ```
-The data should be 2D np.array and its shape is (N_space, N_time), dt is the time step. The default value for rank is 0, which compute an optimal number of singular values truncation.
+The data should be 2D np.array and its shape is (N_space, N_time), dt is the time step. The default value of rank is 0, which compute an optimal number of singular values truncation.
 After fitting it, the ith omega and mode are:
 ```bash
 growth_rate = gyro_dmd.omega[i].real
@@ -27,4 +27,4 @@ To use Higher order + TLS_DMD, define the GYRODMD class as follow:
 ```bash
 gyro_dmd = GYRODMD(rank=number, tls_rank=number, DMD_order=number)
 ```
-Default value for DMD_order is 1.
+Default value of DMD_order is 1.
